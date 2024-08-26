@@ -2,7 +2,22 @@
     $bannerContent = getContent('banner.content', true);
     $bannerElement = getContent('banner.element', orderById: true);
 @endphp
+<style>
+    .banner-thumb {
+    overflow: hidden;
+    position: relative;
+}
 
+.animated-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.banner-thumb:hover .animated-image {
+    transform: scale(1.1); /* Zoom in */
+}
+</style>
 <section class="banner-section bg-img" data-background-image="{{ getImage('assets/images/frontend/banner/' . @$bannerContent->data_values->background_image, '1920x800') }}">
     <div class="container">
         <div class="row align-items-center g-3">
