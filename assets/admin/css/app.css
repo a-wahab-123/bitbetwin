@@ -8543,3 +8543,13 @@ label.required:after {
 .dropdown-menu__body::-webkit-scrollbar-thumb {
   background-color: rgb(7 18 81 / 40%);
 }
+/* Muneeb Code */
+/* Initial style for .game-item muneeb code*/
+.game-item {
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+/* Hover effect for .game-item */
+.game-item:hover {
+  transform: scale(0.95); /* Slightly zoom out (5% smaller) */
+}
